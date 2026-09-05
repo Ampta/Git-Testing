@@ -6,6 +6,18 @@ public class Order {
     private Double price;
     private String status;
 
+    public Order(){}
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", status='" + status + '\'' +
+                '}';
+    }
+
     public long getId() {
         return id;
     }
